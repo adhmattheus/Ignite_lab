@@ -8,6 +8,14 @@ export default {
     children: 'Lorem chama lafera',
     size: 'lg'
   },
+  argTypes: {
+    size: {
+      options: ['sm', 'md', 'lg'],
+      control: {
+        type: 'inline-radio'
+      }
+    }
+  }
 } as Meta<TextProps>
 
 export const Default: StoryObj<TextProps> = {}
@@ -28,5 +36,12 @@ export const customComponent: StoryObj<TextProps> = {
     children: (
       <p> testando</p>
     )
+  },
+  argTypes: {
+    children: {
+      table: {
+        disable: true,
+      }
+    }
   }
 }

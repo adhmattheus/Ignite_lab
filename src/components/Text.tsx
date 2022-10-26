@@ -17,9 +17,9 @@ export function Text({ size = 'md', children, asChild }: TextProps) {
       className={clsx(
         'text-gray-100 font-sans',
         {
-          'text-sx': size === 'sm',
-          'text-sm': size === 'md',
-          'text-md': size === 'lg',
+          'text-sm': size === 'sm',
+          'text-md': size === 'md',
+          'text-lg': size === 'lg',
         }
       )}
     >
